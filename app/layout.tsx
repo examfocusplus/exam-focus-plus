@@ -24,15 +24,28 @@ export const metadata: Metadata = {
     "SSLC Onam Exam",
     "Plus One Notes",
     "Plus Two Notes",
-    "Kerala School Exam",
     "Question Papers",
     "Answer Keys",
   ],
-  authors: [{ name: "Exam Focus Plus" }],
-  openGraph: {
-    title: "Exam Focus Plus",
-    description:
-      "Kerala students' exam preparation platform with notes, question papers and updates.",
-    type: "website",
+  verification: {
+    google: "dvpLXhHxbvolirYjTcszQY1NEV8hsYolFasav-XYzCQ",
   },
 };
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body
+        className={${geistSans.variable} ${geistMono.variable} antialiased}
+      >
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
+}
