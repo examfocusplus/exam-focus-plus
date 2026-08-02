@@ -9,27 +9,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: ${baseUrl}/classes,
+      url: `${baseUrl}/classes`,
       lastModified: new Date(),
     },
     {
-      url: ${baseUrl}/sslc,
+      url: `${baseUrl}/sslc`,
       lastModified: new Date(),
     },
     {
-      url: ${baseUrl}/plus-one,
+      url: `${baseUrl}/plus-one`,
       lastModified: new Date(),
     },
     {
-      url: ${baseUrl}/plus-two,
+      url: `${baseUrl}/plus-two`,
       lastModified: new Date(),
     },
     {
-      url: ${baseUrl}/mcqs,
+      url: `${baseUrl}/mcqs`,
       lastModified: new Date(),
     },
     {
-      url: ${baseUrl}/study-notes,
+      url: `${baseUrl}/study-notes`,
       lastModified: new Date(),
     },
   ];
