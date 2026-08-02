@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Class 5 Onam Exam Time Table 2026 Kerala",
+  description:
+    "Class 5 Onam Exam Time Table 2026 Kerala. Download exam schedule, question papers, answer keys and study materials.",
+};
+
 export default function Class5TimeTable() {
   const timetable = [
     {
@@ -53,7 +59,7 @@ export default function Class5TimeTable() {
   return (
     <main className="min-h-screen bg-gray-50 py-12 px-6">
       <h1 className="text-4xl font-bold text-center mb-10 text-gray-900">
-        Class 5 Onam Exam Time Table
+        Class 5 Onam Exam Time Table 2026 Kerala
       </h1>
 
       <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-lg overflow-hidden">
