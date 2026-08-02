@@ -29,9 +29,6 @@ export const metadata: Metadata = {
     "Answer Keys",
   ],
   authors: [{ name: "Exam Focus Plus" }],
-  verification: {
-    google: "dvpLXhHxbvolirYjTcszQY1NEV8hsYolFasav-XYzCQ",
-  },
   openGraph: {
     title: "Exam Focus Plus",
     description:
@@ -39,21 +36,3 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body
-        className={${geistSans.variable} ${geistMono.variable} antialiased}
-      >
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
-  );
-}
