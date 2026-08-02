@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     "Answer Keys",
   ],
   authors: [{ name: "Exam Focus Plus" }],
+  verification: {
+    google: "dvpLXhHxbvolirYjTcszQY1NEV8hsYolFasav-XYzCQ",
+  },
   openGraph: {
     title: "Exam Focus Plus",
     description:
