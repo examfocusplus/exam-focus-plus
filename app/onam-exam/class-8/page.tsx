@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Class 8 Onam Exam Time Table 2026 Kerala",
+  description:
+    "Class 8 Onam Exam Time Table 2026 Kerala. Download exam schedule, question papers, answer keys and study materials.",
+};
+
 export default function Class8TimeTable() {
   const timetable = [
     {
@@ -53,7 +59,7 @@ export default function Class8TimeTable() {
   return (
     <main className="min-h-screen bg-gray-50 py-12 px-6">
       <h1 className="text-4xl font-bold text-center mb-10 text-gray-900">
-        Class 8 Onam Exam Time Table
+        Class 8 Onam Exam Time Table 2026 Kerala
       </h1>
 
       <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-lg overflow-hidden">
@@ -62,21 +68,10 @@ export default function Class8TimeTable() {
             key={exam.date + exam.subject}
             className="grid md:grid-cols-4 gap-4 p-6 border-b"
           >
-            <h2 className="font-bold text-gray-900">
-              {exam.date}
-            </h2>
-
-            <p className="text-gray-900">
-              {exam.day}
-            </p>
-
-            <p className="font-semibold text-gray-900">
-              {exam.subject}
-            </p>
-
-            <p className="text-gray-900">
-              {exam.time}
-            </p>
+            <h2 className="font-bold text-gray-900">{exam.date}</h2>
+            <p className="text-gray-900">{exam.day}</p>
+            <p className="font-semibold text-gray-900">{exam.subject}</p>
+            <p className="text-gray-900">{exam.time}</p>
           </div>
         ))}
       </div>
