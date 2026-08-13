@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "Answer Keys",
   ],
   verification: {
-    google: "dvpLXhHxbvolirYjTcszQY1NEV8hsYolFasav-XYzCQ",
+    google: "99WfPH3Z6j2KUXqMAJcnOT75_G8JrlqRI6PXODNviWE",
   },
 };
 
