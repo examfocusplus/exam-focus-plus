@@ -15,9 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Exam Focus Plus | Kerala Exam Preparation",
+  title: {
+    default: "Exam Focus Plus",
+    template: "%s | Exam Focus Plus",
+  },
   description:
     "SSLC, Plus One, Plus Two and Class 5-9 study materials, question papers, answer keys and exam updates for Kerala students.",
+  applicationName: "Exam Focus Plus",
   keywords: [
     "Exam Focus Plus",
     "Kerala SSLC 2026",
@@ -40,8 +44,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={${geistSans.variable} ${geistMono.variable} antialiased}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Exam Focus Plus",
+              url: "https://examfocusplus.in",
+            }),
+          }}
+        />
         <Navbar />
         {children}
         <Footer />
