@@ -140,4 +140,4 @@ export default function PlusOneImprovementPage() {
         <div className="overflow-x-auto rounded-lg border border-gray-200 bg-white shadow-sm">
           <table className="w-full min-w-[430px] border-collapse text-left text-sm">
             <thead>
-              <tr className="
+              <tr className="bg-sky-800 text-white">
