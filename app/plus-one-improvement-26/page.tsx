@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Plus One Improvement Exam 2026 Question Papers and Answer Keys",
+  title: "Plus One Improvement Exam 2026 Question Papers & Answer Keys (PDF)",
   description:
-    "Download Plus One Improvement Exam 2026 question papers and answer keys for English, Maths and Physics from Exam Focus Plus.",
+    "Download Kerala Higher Secondary (+1) Plus One Improvement Exam 2026 Question Papers and Answer Keys PDF for Physics, Chemistry, Maths, Biology, Commerce & Humanities.",
+  keywords: [
+    "Plus One Improvement Exam 2026",
+    "Kerala Plus One Answer Key 2026",
+    "Plus One Improvement Exam Question Paper 2026",
+    "DHSE Kerala Plus One Question Paper",
+    "plus one improvement exam answer key 2026"
+  ],
   alternates: {
     canonical: "https://examfocusplus.in/plus-one-improvement-26",
   },
@@ -17,11 +24,6 @@ const subjects = [
   },
   {
     name: "Maths (Science)",
-    questionPaper: "/pdf/plus-one-improvement-26/maths-question-paper.pdf",
-    answerKey: "/pdf/plus-one-improvement-26/maths-answerkey.pdf",
-  },
-  {
-    name: "Maths (Commerce)",
     questionPaper: "/pdf/plus-one-improvement-26/maths-question-paper.pdf",
     answerKey: "/pdf/plus-one-improvement-26/maths-answerkey.pdf",
   },
@@ -48,7 +50,11 @@ const subjects = [
 
 function DownloadButton({ href }: { href: string }) {
   if (!href) {
-    return <span className="text-xs text-gray-400">Coming Soon</span>;
+    return (
+      <span className="text-xs font-medium text-gray-400 sm:text-sm">
+        Coming Soon
+      </span>
+    );
   }
 
   return (
@@ -56,7 +62,7 @@ function DownloadButton({ href }: { href: string }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-block rounded-md bg-blue-700 px-3 py-2 text-center text-xs font-semibold text-white hover:bg-blue-800 sm:text-sm"
+      className="inline-block rounded-md bg-blue-700 px-3 py-2 text-center text-xs font-semibold text-white shadow-sm hover:bg-blue-800 sm:text-sm"
     >
       Download
     </a>
@@ -81,21 +87,17 @@ export default function PlusOneImprovementPage() {
           </p>
         </header>
 
-        <div className="mb-4 rounded-lg border border-blue-100 bg-blue-50 p-3 text-sm text-blue-900">
-          Select your subject to download the question paper or answer key.
-        </div>
-
-        <div className="overflow-x-auto rounded-lg border border-gray-200 bg-white shadow-sm">
-          <table className="w-full min-w-[430px] border-collapse text-left text-sm">
+        <div className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+          <table className="w-full table-fixed border-collapse text-left text-sm">
             <thead>
               <tr className="bg-sky-800 text-white">
-                <th className="border-r border-sky-700 px-3 py-4 font-bold">
+                <th className="w-[32%] px-3 py-4 font-bold sm:px-5">
                   Subject
                 </th>
-                <th className="border-r border-sky-700 px-3 py-4 font-bold">
+                <th className="w-[34%] px-2 py-4 font-bold sm:px-5">
                   Question Paper
                 </th>
-                <th className="px-3 py-4 font-bold">
+                <th className="w-[34%] px-2 py-4 font-bold sm:px-5">
                   Answer Key
                 </th>
               </tr>
@@ -105,17 +107,21 @@ export default function PlusOneImprovementPage() {
               {subjects.map((subject, index) => (
                 <tr
                   key={subject.name}
-                  className={index % 2 === 0 ? "bg-white" : "bg-sky-50"}
+                  className={
+                    index % 2 === 0
+                      ? "border-b border-gray-200 bg-white"
+                      : "border-b border-gray-200 bg-sky-50"
+                  }
                 >
-                  <td className="border-r border-b border-gray-200 px-3 py-4 font-semibold text-gray-800">
+                  <td className="break-words px-3 py-4 font-semibold text-gray-800 sm:px-5">
                     {subject.name}
                   </td>
 
-                  <td className="border-r border-b border-gray-200 px-3 py-4">
+                  <td className="px-2 py-4 sm:px-5">
                     <DownloadButton href={subject.questionPaper} />
                   </td>
 
-                  <td className="border-b border-gray-200 px-3 py-4">
+                  <td className="px-2 py-4 sm:px-5">
                     <DownloadButton href={subject.answerKey} />
                   </td>
                 </tr>
@@ -124,17 +130,9 @@ export default function PlusOneImprovementPage() {
           </table>
         </div>
 
-        <p className="mt-3 text-xs leading-5 text-gray-500">
-          More subject-wise question papers and answer keys will be added when
-          available.
+        <p className="mt-4 text-center text-xs text-gray-500">
+          More question papers and answer keys will be added soon.
         </p>
-
-        <footer className="mt-8 rounded-lg bg-blue-900 px-4 py-5 text-center text-white">
-          <p className="font-bold">Exam Focus Plus</p>
-          <p className="mt-1 text-sm text-blue-100">
-            Kerala Higher Secondary Exam Resources
-          </p>
-        </footer>
       </div>
     </main>
   );
