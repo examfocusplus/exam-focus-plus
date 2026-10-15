@@ -3,113 +3,117 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Plus One Improvement Exam 2026 Question Papers and Answer Keys",
   description:
-    "Download Kerala Plus One Improvement Exam 2026 question papers and answer keys. Get Physics, Chemistry, Mathematics, Biology and other subject question papers for Kerala Higher Secondary students.",
-  keywords: [
-    "Plus One Improvement Exam 2026",
-    "Plus One Improvement Question Paper",
-    "Plus One Improvement Answer Key",
-    "Kerala Plus One Physics Improvement Question Paper",
-    "Plus One Chemistry Question Paper",
-    "Plus One Maths Question Paper",
-    "Plus One Biology Question Paper",
-    "Exam Focus Plus",
-  ],
+    "Download Kerala Plus One Improvement Exam 2026 question papers, official answer keys and unofficial answer keys for all subjects.",
   alternates: {
-    canonical: "https://examfocusplus.in/plus-one-improvement",
+    canonical: "https://examfocusplus.in/plus-one-improvement-26",
   },
 };
 
 const subjects = [
   "Physics",
+  "Maths (Science)",
+  "Maths (Commerce)",
   "Chemistry",
-  "Mathematics",
-  "Biology",
+  "Botany",
+  "Zoology",
   "English",
   "Computer Science",
   "Economics",
   "Accountancy",
   "Business Studies",
+  "History",
+  "Political Science",
+  "Geography",
+  "Sociology",
+  "Psychology",
+  "Malayalam",
+  "Hindi",
 ];
 
 export default function PlusOneImprovementPage() {
   return (
-    <main className="min-h-screen bg-gray-50 px-4 py-10">
-      <div className="mx-auto max-w-5xl">
-        <header className="mb-10 text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-blue-700">
+    <main className="min-h-screen bg-gray-50 px-3 py-6 sm:px-6">
+      <div className="mx-auto max-w-6xl">
+        <header className="mb-6 text-center">
+          <p className="mb-2 text-sm font-bold uppercase tracking-wider text-blue-700">
             Exam Focus Plus
           </p>
 
-          <h1 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
+          <h1 className="text-2xl font-extrabold text-gray-900 sm:text-3xl">
             Plus One Improvement Exam 2026
           </h1>
 
-          <p className="mx-auto max-w-2xl text-base leading-7 text-gray-600">
-            Plus One Improvement Exam question papers and answer keys for
-            Kerala Higher Secondary students.
+          <p className="mt-2 text-sm text-gray-600 sm:text-base">
+            Question Papers & Answer Keys
           </p>
         </header>
 
-        <section className="mb-10 rounded-xl bg-white p-6 shadow-sm">
-          <h2 className="mb-3 text-2xl font-bold text-gray-900">
-            Plus One Improvement Question Papers
-          </h2>
+        <div className="mb-4 rounded-lg border border-blue-100 bg-blue-50 p-3 text-sm text-blue-900">
+          Select your subject to find the question paper and answer keys.
+        </div>
 
-          <p className="leading-7 text-gray-600">
-            Find subject-wise question papers and use them to practise for your
-            Plus One Improvement Examination. Question papers will be added
-            here when available.
+        <div className="overflow-x-auto rounded-lg border border-gray-200 bg-white shadow-sm">
+          <table className="w-full min-w-[570px] border-collapse text-left text-sm">
+            <thead>
+              <tr className="bg-sky-800 text-white">
+                <th className="border-r border-sky-700 px-3 py-4 font-bold">
+                  Subject
+                </th>
+
+                <th className="border-r border-sky-700 px-3 py-4 font-bold">
+                  Question Paper
+                </th>
+
+                <th className="border-r border-sky-700 px-3 py-4 font-bold">
+                  Official Key
+                </th>
+
+                <th className="px-3 py-4 font-bold">
+                  Unofficial Key
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {subjects.map((subject, index) => (
+                <tr
+                  key={subject}
+                  className={
+                    index % 2 === 0 ? "bg-white" : "bg-sky-50"
+                  }
+                >
+                  <td className="border-r border-b border-gray-200 px-3 py-5 font-semibold text-gray-800">
+                    {subject}
+                  </td>
+
+                  <td className="border-r border-b border-gray-200 px-3 py-5">
+                    <span className="text-gray-500">Coming Soon</span>
+                  </td>
+
+                  <td className="border-r border-b border-gray-200 px-3 py-5">
+                    <span className="text-gray-500">Coming Soon</span>
+                  </td>
+
+                  <td className="border-b border-gray-200 px-3 py-5">
+                    <span className="text-gray-500">Coming Soon</span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <p className="mt-3 text-xs leading-5 text-gray-500">
+          Question papers and answer keys will be linked here when the
+          corresponding files are available.
+        </p>
+
+        <footer className="mt-8 rounded-lg bg-blue-900 px-4 py-5 text-center text-white">
+          <p className="font-bold">Exam Focus Plus</p>
+          <p className="mt-1 text-sm text-blue-100">
+            Kerala Higher Secondary Exam Resources
           </p>
-        </section>
-
-        <section className="mb-10 rounded-xl bg-white p-6 shadow-sm">
-          <h2 className="mb-3 text-2xl font-bold text-gray-900">
-            Plus One Improvement Answer Keys
-          </h2>
-
-          <p className="leading-7 text-gray-600">
-            Check your answers and evaluate your preparation using the
-            corresponding subject answer keys.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="mb-6 text-2xl font-bold text-gray-900">
-            Subject-wise Question Papers and Answer Keys
-          </h2>
-
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {subjects.map((subject) => (
-              <article
-                key={subject}
-                className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm"
-              >
-                <h3 className="mb-2 text-lg font-semibold text-gray-900">
-                  Plus One {subject}
-                </h3>
-
-                <p className="mb-4 text-sm leading-6 text-gray-600">
-                  Improvement Exam 2026 Question Paper and Answer Key
-                </p>
-
-                <p className="text-sm font-medium text-gray-500">
-                  Question Paper and Answer Key — Coming Soon
-                </p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="mt-10 rounded-xl bg-blue-50 p-6">
-          <h2 className="mb-3 text-xl font-bold text-blue-900">
-            Prepare for Your Plus One Improvement Exam
-          </h2>
-
-          <p className="leading-7 text-blue-900">
-            Visit Exam Focus Plus for Kerala syllabus study materials,
-            question papers, answer keys and exam preparation resources.
-          </p>
-        </section>
+        </footer>
       </div>
     </main>
   );
