@@ -53,7 +53,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "Exam Focus Plus",
-              url: "https://examfocusplus.in",
+              url: "https://www.examfocusplus.in",
             }),
           }}
         />
