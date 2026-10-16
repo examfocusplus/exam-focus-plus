@@ -15,13 +15,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://examfocusplus.in"),
+
   title: {
     default: "Exam Focus Plus",
     template: "%s | Exam Focus Plus",
   },
+
   description:
     "SSLC, Plus One, Plus Two and Class 5-9 study materials, question papers, answer keys and exam updates for Kerala students.",
+
   applicationName: "Exam Focus Plus",
+
   keywords: [
     "Exam Focus Plus",
     "Kerala SSLC 2026",
@@ -31,6 +36,7 @@ export const metadata: Metadata = {
     "Question Papers",
     "Answer Keys",
   ],
+
   verification: {
     google: "dvpLXhHxbvolirYjTcszQY1NEV8hsYolFasav-XYzCQ",
   },
@@ -44,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={geistSans.variable + " " + geistMono.variable + " antialiased"}
+        className={${geistSans.variable} ${geistMono.variable} antialiased}
       >
         <script
           type="application/ld+json"
@@ -53,10 +59,11 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "Exam Focus Plus",
-              url: "https://www.examfocusplus.in",
+              url: "https://examfocusplus.in",
             }),
           }}
         />
+
         <Navbar />
         {children}
         <Footer />
