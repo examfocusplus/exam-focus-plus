@@ -28,7 +28,7 @@ export default function ContactPage() {
 
             <p className="mt-2 break-all text-blue-800">
               <a
-                href={mailto:${email}}
+                href={`mailto:${email}`}
                 className="font-semibold underline decoration-blue-300 underline-offset-4 hover:text-blue-600"
               >
                 {email}
