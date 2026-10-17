@@ -37,7 +37,11 @@ const subjects = [
     questionPaper: "/pdf/plus-one-improvement-26/biology-question-paper.pdf",
     answerKey: "",
   },
-  { name: "Chemistry", questionPaper: "", answerKey: "" },
+  {
+  name: "Chemistry",
+  questionPaper: "/pdf/plus-one-improvement-26/chemistry-question-paper.pdf",
+  answerKey: "",
+  },
   { name: "Computer Science", questionPaper: "", answerKey: "" },
   { name: "Economics", questionPaper: "", answerKey: "" },
   { name: "Accountancy", questionPaper: "", answerKey: "" },
