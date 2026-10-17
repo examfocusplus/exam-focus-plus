@@ -128,6 +128,7 @@ export default function PlusOneImprovementPage() {
                       {subject.name}
                     </td>
 
+                    {/* Question Paper */}
                     <td className="border-b border-slate-100 px-4 py-4 text-center sm:px-6">
                       {subject.questionPaper ? (
                         <a
@@ -144,6 +145,7 @@ export default function PlusOneImprovementPage() {
                       )}
                     </td>
 
+                    {/* Answer Key */}
                     <td className="border-b border-slate-100 px-4 py-4 text-center sm:px-6">
                       {subject.name === "Biology" ? (
                         <div className="flex flex-col items-center gap-2">
@@ -155,9 +157,13 @@ export default function PlusOneImprovementPage() {
                             Zoology Answer Key
                           </a>
 
-                          <span className="text-xs font-medium text-slate-400">
-                            Botany - Coming Soon
-                          </span>
+                          <a
+                            href="/pdf/plus-one-improvement-26/botany-answerkey.pdf"
+                            download
+                            className="inline-block rounded-lg bg-emerald-600 px-3 py-2 text-xs font-bold text-white transition hover:bg-emerald-700 sm:text-sm"
+                          >
+                            Botany Answer Key
+                          </a>
                         </div>
                       ) : subject.answerKey ? (
                         <a
