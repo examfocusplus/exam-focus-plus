@@ -148,7 +148,7 @@ export default function Home() {
               className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg"
             >
               <div
-                className={flex h-2 w-full bg-gradient-to-r ${category.color}}
+                className={`flex h-2 w-full bg-gradient-to-r ${category.color}`}
               />
 
               <div className="p-4 sm:p-6">
