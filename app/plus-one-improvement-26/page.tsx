@@ -94,6 +94,7 @@ export default function PlusOneImprovementPage() {
             <h2 className="text-xl font-bold sm:text-2xl">
               Subject-wise Download Links
             </h2>
+
             <p className="mt-2 text-sm text-blue-100">
               Select a subject to access the available study materials.
             </p>
@@ -106,9 +107,11 @@ export default function PlusOneImprovementPage() {
                   <th className="border-b border-slate-200 px-4 py-4 font-bold sm:px-6">
                     Subject
                   </th>
+
                   <th className="border-b border-slate-200 px-4 py-4 text-center font-bold sm:px-6">
                     Question Paper
                   </th>
+
                   <th className="border-b border-slate-200 px-4 py-4 text-center font-bold sm:px-6">
                     Answer Key
                   </th>
@@ -142,7 +145,21 @@ export default function PlusOneImprovementPage() {
                     </td>
 
                     <td className="border-b border-slate-100 px-4 py-4 text-center sm:px-6">
-                      {subject.answerKey ? (
+                      {subject.name === "Biology" ? (
+                        <div className="flex flex-col items-center gap-2">
+                          <a
+                            href="/pdf/plus-one-improvement-26/zoology-answerkey.pdf"
+                            download
+                            className="inline-block rounded-lg bg-emerald-600 px-3 py-2 text-xs font-bold text-white transition hover:bg-emerald-700 sm:text-sm"
+                          >
+                            Zoology Answer Key
+                          </a>
+
+                          <span className="text-xs font-medium text-slate-400">
+                            Botany - Coming Soon
+                          </span>
+                        </div>
+                      ) : subject.answerKey ? (
                         <a
                           href={subject.answerKey}
                           download
@@ -166,6 +183,7 @@ export default function PlusOneImprovementPage() {
         {/* Important Note */}
         <section className="mt-6 rounded-xl border border-amber-200 bg-amber-50 p-4 sm:p-5">
           <h2 className="font-bold text-amber-900">Important Note</h2>
+
           <p className="mt-2 text-sm leading-6 text-amber-900">
             Please check the available question papers and answer keys before
             downloading. Additional subject materials will be added when
