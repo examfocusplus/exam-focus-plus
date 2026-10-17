@@ -1,26 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Plus One Improvement Exam 2026 Question Papers & Answer Keys (PDF) - Kerala",
+  title: "Plus One Improvement Exam 2026 Question Papers & Answer Keys",
   description:
-    "Download Kerala Higher Secondary (+1) Plus One Improvement / Supplementary Exam 2026 Question Papers and Official Answer Keys PDF for Physics, Chemistry, Maths, Biology, Commerce & Humanities.",
-  keywords: [
-    "Plus One Improvement Exam 2026",
-    "Kerala Plus One Answer Key 2026",
-    "Plus One Improvement Exam Question Paper 2026",
-    "DHSE Kerala Plus One Question Paper",
-    "plus one improvement exam answer key 2026",
-    "Kerala Higher Secondary +1 Answer Key PDF"
-  ],
+    "Download Plus One Improvement Exam 2026 question papers and answer keys for Kerala Higher Secondary students. Practise questions and prepare for your examination with Exam Focus Plus.",
   alternates: {
     canonical: "https://examfocusplus.in/plus-one-improvement-26",
   },
   openGraph: {
-    title: "Plus One Improvement Exam 2026 Question Papers & Answer Keys (PDF)",
-    description: "Download Kerala Plus One (+1) Improvement Exam 2026 Question Papers and Answer Keys PDF.",
+    title: "Plus One Improvement Exam 2026 | Exam Focus Plus",
+    description:
+      "Find Plus One Improvement Exam 2026 question papers and answer keys for Kerala Higher Secondary students.",
     url: "https://examfocusplus.in/plus-one-improvement-26",
-    siteName: "Exam Focus Plus",
-    type: "article",
+    type: "website",
   },
 };
 
@@ -31,7 +23,7 @@ const subjects = [
     answerKey: "/pdf/plus-one-improvement-26/physics-answerkey.pdf",
   },
   {
-    name: "Maths (Science)",
+    name: "Mathematics",
     questionPaper: "/pdf/plus-one-improvement-26/maths-question-paper.pdf",
     answerKey: "/pdf/plus-one-improvement-26/maths-answerkey.pdf",
   },
@@ -40,139 +32,154 @@ const subjects = [
     questionPaper: "/pdf/plus-one-improvement-26/english-question-paper.pdf",
     answerKey: "/pdf/plus-one-improvement-26/english-answerkey.pdf",
   },
+  { name: "Biology", questionPaper: "", answerKey: "" },
   { name: "Chemistry", questionPaper: "", answerKey: "" },
-  { name: "Botany", questionPaper: "", answerKey: "" },
-  { name: "Zoology", questionPaper: "", answerKey: "" },
   { name: "Computer Science", questionPaper: "", answerKey: "" },
   { name: "Economics", questionPaper: "", answerKey: "" },
   { name: "Accountancy", questionPaper: "", answerKey: "" },
   { name: "Business Studies", questionPaper: "", answerKey: "" },
-  { name: "History", questionPaper: "", answerKey: "" },
-  { name: "Political Science", questionPaper: "", answerKey: "" },
-  { name: "Geography", questionPaper: "", answerKey: "" },
-  { name: "Sociology", questionPaper: "", answerKey: "" },
-  { name: "Psychology", questionPaper: "", answerKey: "" },
-  { name: "Malayalam", questionPaper: "", answerKey: "" },
-  { name: "Hindi", questionPaper: "", answerKey: "" },
 ];
 
-function DownloadButton({ href }: { href: string }) {
-  if (!href) {
-    return (
-      <span className="text-xs font-medium text-gray-400 sm:text-sm">
-        Coming Soon
-      </span>
-    );
-  }
-
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-block rounded-md bg-blue-700 px-3 py-2 text-center text-xs font-semibold text-white shadow-sm hover:bg-blue-800 sm:text-sm"
-    >
-      Download
-    </a>
-  );
-}
-
 export default function PlusOneImprovementPage() {
-  // Schema for Google Search Rich Results
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "EducationalOccupationalCredential",
-    "name": "Plus One Improvement Exam 2026 Question Papers & Answer Keys",
-    "description": "Download Kerala Higher Secondary (+1) Improvement exam question papers and answer keys in PDF format.",
-    "provider": {
-      "@type": "Organization",
-      "name": "Exam Focus Plus",
-      "url": "https://examfocusplus.in"
-    }
-  };
-
   return (
-    <main className="min-h-screen bg-gray-50 px-2 py-6 sm:px-5">
-      {/* Inject Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
+    <main className="min-h-screen bg-slate-50 px-4 py-10 sm:px-6 sm:py-14">
       <div className="mx-auto max-w-5xl">
-        <header className="mb-6 text-center">
-          <p className="mb-2 text-sm font-bold uppercase tracking-wider text-blue-700">
+        {/* Page Heading */}
+        <header className="mb-8 text-center sm:mb-10">
+          <p className="mb-3 text-sm font-bold uppercase tracking-widest text-blue-700">
             Exam Focus Plus
           </p>
 
-          <h1 className="text-2xl font-extrabold text-gray-900 sm:text-3xl">
-            Plus One Improvement Exam 2026 Question Papers & Answer Keys
+          <h1 className="text-3xl font-extrabold leading-tight text-slate-900 sm:text-5xl">
+            Plus One Improvement Exam 2026
           </h1>
 
-          <p className="mt-2 text-sm text-gray-600 sm:text-base max-w-2xl mx-auto">
-            Download official DHSE Kerala Class 11 (+1) Improvement & Supplementary Examination 2026 question papers with solved answer keys for Science, Commerce, and Humanities.
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-600">
+            Question Papers and Answer Keys
           </p>
         </header>
 
-        <div className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
-          <table className="w-full table-fixed border-collapse text-left text-sm">
-            <thead>
-              <tr className="bg-sky-800 text-white">
-                <th className="w-[32%] px-3 py-4 font-bold sm:px-5">
-                  Subject
-                </th>
-                <th className="w-[34%] px-2 py-4 font-bold sm:px-5">
-                  Question Paper
-                </th>
-                <th className="w-[34%] px-2 py-4 font-bold sm:px-5">
-                  Answer Key
-                </th>
-              </tr>
-            </thead>
-
-            <tbody>
-              {subjects.map((subject, index) => (
-                <tr
-                  key={subject.name}
-                  className={
-                    index % 2 === 0
-                      ? "border-b border-gray-200 bg-white"
-                      : "border-b border-gray-200 bg-sky-50"
-                  }
-                >
-                  <td className="break-words px-3 py-4 font-semibold text-gray-800 sm:px-5">
-                    {subject.name}
-                  </td>
-
-                  <td className="px-2 py-4 sm:px-5">
-                    <DownloadButton href={subject.questionPaper} />
-                  </td>
-
-                  <td className="px-2 py-4 sm:px-5">
-                    <DownloadButton href={subject.answerKey} />
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-        {/* SEO Text Content Block */}
-        <section className="mt-8 rounded-lg bg-white p-5 border border-gray-200 shadow-sm text-gray-700 text-sm leading-relaxed">
-          <h2 className="text-lg font-bold text-gray-900 mb-2">
-            Kerala Higher Secondary (+1) Improvement Exam 2026 Overview
+        {/* Description */}
+        <section className="mb-8 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8">
+          <h2 className="mb-4 text-xl font-bold text-slate-900 sm:text-2xl">
+            About Plus One Improvement Exam 2026
           </h2>
-          <p className="mb-3">
-            The Directorate of Higher Secondary Education (DHSE), Kerala conducts the Plus One Improvement / Supplementary examinations for Class 11 students to improve their scores. Students who appeared for the exam can check and download the official question papers and answer keys prepared by subject experts.
-          </p>
-          <p>
-            Use the links in the table above to download subject-wise PDF files for Physics, Chemistry, Mathematics, Biology, Accountancy, and other subjects. PDF files for missing subjects will be updated shortly after the exams conclude.
+
+          <p className="text-sm leading-7 text-slate-700 sm:text-base">
+            The Plus One Improvement Exam 2026 is an important opportunity for
+            Kerala Higher Secondary students to improve their academic
+            performance. On this page, students can find useful study resources
+            for the Plus One Improvement Examination, including subject-wise
+            question papers and answer keys. These materials can help students
+            understand the exam pattern, practise important questions, and
+            evaluate their preparation before the examination. Students can use
+            the available question papers for revision and refer to the answer
+            keys to check their answers and identify areas that need
+            improvement. Our aim at Exam Focus Plus is to provide helpful
+            educational resources and exam-related updates in one place, making
+            preparation easier for students. Students are encouraged to
+            practise regularly and review their lessons carefully. Check this
+            page for available study materials and updates related to the Plus
+            One Improvement Exam 2026.
           </p>
         </section>
 
-        <p className="mt-4 text-center text-xs text-gray-500">
-          More question papers and answer keys will be added soon.
-        </p>
+        {/* Download Table */}
+        <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <div className="bg-gradient-to-r from-blue-800 to-blue-600 px-5 py-5 text-white sm:px-7">
+            <h2 className="text-xl font-bold sm:text-2xl">
+              Subject-wise Download Links
+            </h2>
+            <p className="mt-2 text-sm text-blue-100">
+              Select a subject to access the available study materials.
+            </p>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[480px] border-collapse text-left">
+              <thead>
+                <tr className="bg-sky-50 text-sm text-slate-800">
+                  <th className="border-b border-slate-200 px-4 py-4 font-bold sm:px-6">
+                    Subject
+                  </th>
+                  <th className="border-b border-slate-200 px-4 py-4 text-center font-bold sm:px-6">
+                    Question Paper
+                  </th>
+                  <th className="border-b border-slate-200 px-4 py-4 text-center font-bold sm:px-6">
+                    Answer Key
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                {subjects.map((subject, index) => (
+                  <tr
+                    key={subject.name}
+                    className={
+                      index % 2 === 0 ? "bg-white" : "bg-slate-50"
+                    }
+                  >
+                    <td className="border-b border-slate-100 px-4 py-4 text-sm font-semibold text-slate-800 sm:px-6">
+                      {subject.name}
+                    </td>
+
+                    <td className="border-b border-slate-100 px-4 py-4 text-center sm:px-6">
+                      {subject.questionPaper ? (
+                        <a
+                          href={subject.questionPaper}
+                          download
+                          className="inline-block rounded-lg bg-blue-700 px-3 py-2 text-xs font-bold text-white transition hover:bg-blue-800 sm:text-sm"
+                        >
+                          Download PDF
+                        </a>
+                      ) : (
+                        <span className="text-xs font-medium text-slate-400">
+                          Coming Soon
+                        </span>
+                      )}
+                    </td>
+
+                    <td className="border-b border-slate-100 px-4 py-4 text-center sm:px-6">
+                      {subject.answerKey ? (
+                        <a
+                          href={subject.answerKey}
+                          download
+                          className="inline-block rounded-lg bg-emerald-600 px-3 py-2 text-xs font-bold text-white transition hover:bg-emerald-700 sm:text-sm"
+                        >
+                          Download PDF
+                        </a>
+                      ) : (
+                        <span className="text-xs font-medium text-slate-400">
+                          Coming Soon
+                        </span>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* Important Note */}
+        <section className="mt-6 rounded-xl border border-amber-200 bg-amber-50 p-4 sm:p-5">
+          <h2 className="font-bold text-amber-900">Important Note</h2>
+          <p className="mt-2 text-sm leading-6 text-amber-900">
+            Please check the available question papers and answer keys before
+            downloading. Additional subject materials will be added when
+            available.
+          </p>
+        </section>
+
+        {/* Back to Home */}
+        <div className="mt-8 text-center">
+          <a
+            href="/"
+            className="inline-flex rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-700 transition hover:bg-slate-100"
+          >
+            ← Back to Home
+          </a>
+        </div>
       </div>
     </main>
   );
