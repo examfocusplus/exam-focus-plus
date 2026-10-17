@@ -32,7 +32,11 @@ const subjects = [
     questionPaper: "/pdf/plus-one-improvement-26/english-question-paper.pdf",
     answerKey: "/pdf/plus-one-improvement-26/english-answerkey.pdf",
   },
-  { name: "Biology", questionPaper: "", answerKey: "" },
+  {
+    name: "Biology",
+    questionPaper: "/pdf/plus-one-improvement-26/biology-question-paper.pdf",
+    answerKey: "",
+  },
   { name: "Chemistry", questionPaper: "", answerKey: "" },
   { name: "Computer Science", questionPaper: "", answerKey: "" },
   { name: "Economics", questionPaper: "", answerKey: "" },
@@ -115,9 +119,7 @@ export default function PlusOneImprovementPage() {
                 {subjects.map((subject, index) => (
                   <tr
                     key={subject.name}
-                    className={
-                      index % 2 === 0 ? "bg-white" : "bg-slate-50"
-                    }
+                    className={index % 2 === 0 ? "bg-white" : "bg-slate-50"}
                   >
                     <td className="border-b border-slate-100 px-4 py-4 text-sm font-semibold text-slate-800 sm:px-6">
                       {subject.name}
