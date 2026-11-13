@@ -147,7 +147,7 @@ export default function PlusTwoScienceTimetablePage() {
           </p>
 
           <a
-            href="/pdf/plus-two-christmas-exam-timetable-2026.pdf"
+            href="/pdf/christmas-exam-timetable/plus-two-christmas-exam-timetable-2026.pdf"
             download
             className="mt-5 inline-flex items-center justify-center gap-2 rounded-xl bg-blue-700 px-6 py-3 text-sm font-bold text-white transition hover:bg-blue-800"
           >
