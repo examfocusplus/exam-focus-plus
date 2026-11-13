@@ -3,11 +3,11 @@ import Link from "next/link";
 export default function LatestUpdatesPage() {
   const updates = [
     {
-      title: "Plus One Improvement Exam 2026",
+      title: "Kerala Christmas Exam 2026",
       description:
-        "Plus One Improvement Exam 2026 question papers and answer keys.",
-      href: "/plus-one-improvement-26",
-      label: "Question Papers & Answer Keys",
+        "Christmas Exam 2026 updates and class-wise study resources for Kerala syllabus students from Class 5 to Class 12.",
+      href: "/christmas-exam-2026",
+      label: "View Class-wise Updates",
       featured: true,
     },
     {
@@ -16,22 +16,6 @@ export default function LatestUpdatesPage() {
         "Watch the latest video classes and improve your exam preparation.",
       href: "https://youtube.com/@examfocusplus-hg7hb?si=kPU2Qwy-Ind0u4UI",
       label: "Watch Videos",
-      featured: false,
-    },
-    {
-      title: "New Study Notes Uploaded",
-      description:
-        "Explore study notes to help you prepare for your examinations.",
-      href: "/study-notes",
-      label: "Study Notes",
-      featured: false,
-    },
-    {
-      title: "New MCQ Practice Sets Available",
-      description:
-        "Practise multiple-choice questions and test your knowledge.",
-      href: "/mcqs",
-      label: "Practise MCQs",
       featured: false,
     },
   ];
@@ -49,8 +33,8 @@ export default function LatestUpdatesPage() {
           </h1>
 
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-slate-600 sm:text-base">
-            Get the latest exam notifications, question papers, answer keys
-            and study materials in one place.
+            Get the latest exam notifications and educational updates for
+            Kerala syllabus students.
           </p>
         </div>
 
