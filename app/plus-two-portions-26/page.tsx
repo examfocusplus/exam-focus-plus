@@ -57,7 +57,7 @@ export default function PlusTwoPortionsPage() {
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {subjects.map((subject) => {
-              const pdfPath = /pdf/portions/${subject.file};
+              const pdfPath = `/pdf/portions/${subject.file}`;
 
               return (
                 <article
