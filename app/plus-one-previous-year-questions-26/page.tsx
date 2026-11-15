@@ -1,9 +1,9 @@
 const subjects = [
-  { name: "English", file: null },
+  { name: "English", file: "english_+1.pdf" },
   { name: "Physics", file: "Physics_+1.pdf" },
-  { name: "Chemistry", file: null },
+  { name: "Chemistry", file: "chemistry_+1.pdf" },
   { name: "Mathematics", file: "maths_+1.pdf" },
-  { name: "Biology", file: null },
+  { name: "Biology", file: "biology_+1.pdf" },
 ];
 
 export const metadata = {
