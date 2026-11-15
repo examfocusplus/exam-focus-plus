@@ -1,15 +1,15 @@
 const subjects = [
-  { name: "English", file: null },
+  { name: "English", file: "english_+1.pdf" },
   { name: "Physics", file: "physics_+1.pdf" },
-  { name: "Chemistry", file: null },
+  { name: "Chemistry", file: "chemistry_+1.pdf" },
   { name: "Mathematics", file: "maths_+1.pdf" },
-  { name: "Biology", file: null },
+  { name: "Biology", file: "biology_+1.pdf" },
 ];
 
 export const metadata = {
   title: "Plus One Previous Year Question Papers PDF | Exam Focus Plus",
   description:
-    "Download Plus One previous year question papers for English, Physics, Chemistry, Mathematics and Biology.",
+    "Download Plus One previous year question papers for English, Physics, Chemistry, Mathematics and Biology. Access subject-wise question paper PDFs for exam preparation.",
   keywords: [
     "Plus One Previous Year Question Papers",
     "Plus One Question Papers PDF",
@@ -45,10 +45,9 @@ export default function PlusOnePreviousYearQuestionsPage() {
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {subjects.map((subject) => {
-              const pdfPath = subject.file
-                ? "/pdf/previous-year-questions/" +
-                  encodeURIComponent(subject.file)
-                : null;
+              const pdfPath =
+                "/pdf/previous-year-questions/" +
+                encodeURIComponent(subject.file);
 
               return (
                 <div
@@ -68,29 +67,23 @@ export default function PlusOnePreviousYearQuestionsPage() {
                     Plus One Previous Year Question Paper
                   </p>
 
-                  {pdfPath ? (
-                    <div className="flex flex-wrap gap-2">
-                      <a
-                        href={pdfPath}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 rounded-lg bg-green-700 px-3 py-2 text-center text-sm font-semibold text-white hover:bg-green-800"
-                      >
-                        View PDF
-                      </a>
-                      <a
-                        href={pdfPath}
-                        download
-                        className="flex-1 rounded-lg border border-green-700 px-3 py-2 text-center text-sm font-semibold text-green-700 hover:bg-green-50"
-                      >
-                        Download
-                      </a>
-                    </div>
-                  ) : (
-                    <div className="rounded-lg bg-gray-100 px-3 py-2 text-center text-sm font-semibold text-gray-500">
-                      Coming Soon
-                    </div>
-                  )}
+                  <div className="flex flex-wrap gap-2">
+                    <a
+                      href={pdfPath}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 rounded-lg bg-green-700 px-3 py-2 text-center text-sm font-semibold text-white hover:bg-green-800"
+                    >
+                      View PDF
+                    </a>
+                    <a
+                      href={pdfPath}
+                      download
+                      className="flex-1 rounded-lg border border-green-700 px-3 py-2 text-center text-sm font-semibold text-green-700 hover:bg-green-50"
+                    >
+                      Download
+                    </a>
+                  </div>
                 </div>
               );
             })}
