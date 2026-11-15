@@ -1,11 +1,39 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Plus Two Christmas Exam 2026 | Exam Focus Plus",
+  title:
+    "Plus Two Christmas Exam Question Papers 2026, Timetable & Portions | Exam Focus Plus",
+
   description:
-    "Find Kerala Plus Two Christmas Exam 2026 timetable, subject-wise portions, weightage and previous year question papers. Access study resources and exam updates at Exam Focus Plus.",
+    "Find Kerala Plus Two Christmas Exam Question Papers 2026, previous year question papers, subject-wise exam timetable, portions and weightage for Plus Two students.",
+
+  keywords: [
+    "Plus Two Christmas Exam Question Paper 2026",
+    "Plus Two Christmas Exam 2026",
+    "Plus Two Christmas Question Papers",
+    "Kerala Plus Two Christmas Exam",
+    "Plus Two Christmas Exam Timetable 2026",
+    "Plus Two Christmas Exam Portions",
+    "Plus Two Previous Year Question Papers",
+    "Plus Two Exam Preparation Kerala",
+    "Plus Two Physics Question Paper",
+    "Plus Two Chemistry Question Paper",
+    "Plus Two Maths Question Paper",
+    "Plus Two Biology Question Paper",
+    "Exam Focus Plus",
+  ],
+
   alternates: {
     canonical: "/plus-two",
+  },
+
+  openGraph: {
+    title: "Plus Two Christmas Exam 2026 | Exam Focus Plus",
+    description:
+      "Plus Two Christmas Exam question papers, timetable, subject-wise portions and weightage for Kerala Higher Secondary students.",
+    url: "https://examfocusplus.in/plus-two",
+    siteName: "Exam Focus Plus",
+    type: "website",
   },
 };
 
@@ -20,26 +48,31 @@ export default function PlusTwoPage() {
           </p>
 
           <h1 className="text-2xl font-bold leading-tight text-gray-900 sm:text-3xl">
-            Plus Two Christmas Exam 2026
+            Plus Two Christmas Exam 2026 – Question Papers, Timetable & Portions
           </h1>
 
           <p className="mt-4 text-sm leading-7 text-gray-600 sm:text-base">
-            Welcome to the Plus Two Christmas Exam 2026 section of Exam Focus
-            Plus. This page brings together useful examination resources for
-            Kerala Higher Secondary students preparing for their Christmas
-            examinations. Students can access the subject-wise examination
-            timetable, check the portions and weightage for different subjects,
-            and practise using previous year question papers. These resources
-            are organised to make exam preparation easier and help students
-            plan their revision effectively. The timetable provides examination
-            dates and session details, while the portions section offers
-            subject-wise PDF materials for reference. Previous year question
-            papers can help students understand question patterns and practise
-            answering within the examination time. Visit the respective
-            sections to view or download the available study materials.
-            Exam Focus Plus aims to provide organised and accessible
-            educational resources to support students throughout their
-            examination preparation.
+            Welcome to the Plus Two Christmas Exam 2026 resource section of
+            Exam Focus Plus. Kerala Higher Secondary Plus Two students can
+            find useful examination materials and study resources here.
+            Students looking for Plus Two Christmas Exam question papers
+            can explore the available previous year question papers and
+            practise subject-wise questions for better exam preparation.
+
+            This page also provides the Plus Two Christmas Exam timetable,
+            subject-wise portions and weightage information. Students can
+            check examination dates, review the portions for each subject
+            and download available PDF study materials. Resources for
+            Physics, Chemistry, Mathematics, Biology, Computer Science
+            and English are organised to make revision easier.
+
+            Whether you are preparing for the Plus Two Christmas examination
+            or looking for previous question papers, this page brings
+            together the available resources in one place. Visit the
+            respective sections below to access the timetable, portions
+            and question papers. Exam Focus Plus aims to support Kerala
+            Higher Secondary students with organised and accessible
+            educational resources.
           </p>
         </section>
 
@@ -68,8 +101,10 @@ export default function PlusTwoPage() {
                 </h2>
 
                 <p className="mt-2 text-sm leading-6 text-gray-600">
-                  Access the examination timetable, subject-wise portions,
-                  weightage and previous year question papers in one place.
+                  Access Plus Two Christmas Exam question papers,
+                  examination timetable, subject-wise portions and
+                  weightage in one place. Useful resources for Kerala
+                  Higher Secondary students.
                 </p>
 
                 <div className="mt-5 flex flex-wrap gap-2">
@@ -106,6 +141,7 @@ export default function PlusTwoPage() {
               <h2 className="text-lg font-bold text-gray-900">
                 Exam Focus Plus YouTube Channel
               </h2>
+
               <p className="mt-2 text-sm leading-6 text-gray-600">
                 Watch educational videos, exam updates and useful study
                 materials on our YouTube channel.
