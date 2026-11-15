@@ -1,21 +1,20 @@
 const subjects = [
-  { name: "English", file: "english_+1.pdf" },
+  { name: "English", file: null },
   { name: "Physics", file: "physics_+1.pdf" },
-  { name: "Chemistry", file: "chemistry_+1.pdf" },
+  { name: "Chemistry", file: null },
   { name: "Mathematics", file: "maths_+1.pdf" },
-  { name: "Biology", file: "biology_+1.pdf" },
+  { name: "Biology", file: null },
 ];
 
 export const metadata = {
   title: "Plus One Previous Year Question Papers PDF | Exam Focus Plus",
   description:
-    "Download Plus One previous year question papers for English, Physics, Chemistry, Mathematics and Biology. Access subject-wise question paper PDFs for exam preparation.",
+    "Download Plus One previous year question papers for English, Physics, Chemistry, Mathematics and Biology.",
   keywords: [
     "Plus One Previous Year Question Papers",
     "Plus One Question Papers PDF",
     "Plus One Physics Question Paper",
     "Plus One Maths Question Paper",
-    "Plus one Christmas Exam Question Paper 2026",
     "Plus One Biology Question Paper",
   ],
 };
@@ -47,7 +46,8 @@ export default function PlusOnePreviousYearQuestionsPage() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {subjects.map((subject) => {
               const pdfPath = subject.file
-                ? "/pdf/previous-year-questions/" + subject.file
+                ? "/pdf/previous-year-questions/" +
+                  encodeURIComponent(subject.file)
                 : null;
 
               return (
