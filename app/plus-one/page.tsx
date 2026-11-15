@@ -1,125 +1,184 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Plus One Christmas Exam 2026 | Exam Focus Plus",
+  title:
+    "Plus One Christmas Exam Question Papers 2026, Timetable & Portions | Exam Focus Plus",
+
   description:
-    "Find Kerala Plus One Christmas Exam 2026 timetable, exam portions, previous year question papers and Improvement Exam resources.",
+    "Find Kerala Plus One Christmas Exam 2026 question papers, examination timetable, subject-wise portions, weightage and Plus One Improvement Exam resources.",
+
+  keywords: [
+    "Plus One Christmas Exam 2026",
+    "Plus One Christmas Exam Question Paper 2026",
+    "Plus One Christmas Question Papers",
+    "Kerala Plus One Christmas Exam",
+    "Plus One Christmas Exam Timetable 2026",
+    "Plus One Christmas Exam Portions",
+    "Plus One Previous Year Question Papers",
+    "Plus One Exam Preparation Kerala",
+    "Plus One Improvement Exam 2026",
+    "Exam Focus Plus",
+  ],
+
   alternates: {
     canonical: "/plus-one",
   },
-};
 
-const sections = [
-  {
-    title: "Christmas Exam Time Table",
+  openGraph: {
+    title: "Plus One Christmas Exam 2026 | Exam Focus Plus",
     description:
-      "The Plus One Christmas examination timetable will be published here after its official release. Students can revisit this section to find subject-wise examination dates and schedules. The timetable will help students plan their study time and organise revision before the examination. Please check again for official updates.",
-    icon: "📅",
+      "Plus One Christmas Exam question papers, timetable, subject-wise portions and weightage for Kerala Higher Secondary students.",
+    url: "https://examfocusplus.in/plus-one",
+    siteName: "Exam Focus Plus",
+    type: "website",
   },
-  {
-    title: "Christmas Exam Portions",
-    description:
-      "The Plus One Christmas examination portions will be updated here when official details become available. Students will be able to check the subjects, chapters and topics included in the examination. This section will help students organise their preparation and focus on the required lessons. Please revisit this page for updates.",
-    icon: "📚",
-  },
-  {
-    title: "Previous Year Question Papers",
-    description:
-      "Plus One previous year Christmas examination question papers will be added here when available. Students can use these papers to practise different question types, understand examination patterns and improve time management. Regular practice can help students prepare with greater confidence. Visit this section again for new question papers and resources.",
-    icon: "📝",
-  },
-];
+};
 
 export default function PlusOnePage() {
   return (
-    <main className="min-h-screen bg-gray-50 px-4 py-10 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-6xl">
-        <div className="mb-10 text-center">
-          <p className="mb-3 font-semibold text-blue-600">
+    <main className="min-h-screen bg-gray-50 px-4 py-8 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-5xl">
+
+        <section className="mb-8">
+          <p className="mb-2 font-semibold tracking-wide text-blue-700">
             EXAM FOCUS PLUS
           </p>
 
-          <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-            Plus One Exam Resources 2026
+          <h1 className="text-2xl font-bold leading-tight text-gray-900 sm:text-3xl">
+            Plus One Christmas Exam 2026 – Question Papers, Timetable & Portions
           </h1>
 
-          <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-gray-600">
-            Welcome to the Kerala Plus One section of Exam Focus Plus.
-            This page is designed to help Higher Secondary students
-            find examination information and useful study resources
-            in one place. Students can explore the Christmas Exam
-            Time Table, Christmas Exam Portions and Previous Year
-            Question Papers. The timetable section will provide
-            subject-wise examination dates after the official
-            announcement. The portions section will help students
-            identify the lessons and topics to prepare for their
-            examinations. Previous year question papers will provide
-            opportunities to practise and understand question
-            patterns. This page also provides direct access to the
-            Plus One Improvement Exam 2026 resources, where students
-            can find available question papers and answer key
-            materials. Our aim is to make educational resources
-            simple, organised and accessible for students, parents
-            and teachers. The page will be updated as new examination
-            information and study materials become available.
-            Students are encouraged to revisit Exam Focus Plus
-            regularly for the latest Plus One examination updates
-            and learning resources.
+          <p className="mt-4 text-sm leading-7 text-gray-600 sm:text-base">
+            Welcome to the Plus One Christmas Exam 2026 resource section
+            of Exam Focus Plus. Kerala Higher Secondary Plus One students
+            can find useful examination information and study materials
+            here. Students preparing for the Plus One Christmas examination
+            can explore the subject-wise examination timetable, portions
+            and weightage, and previous year question papers.
+
+            The timetable section will provide examination dates and
+            session details. The portions section will help students
+            identify the chapters and topics included in the examination.
+            Previous year question papers can help students understand
+            question patterns and practise answering within the examination
+            time. This page also provides direct access to Plus One
+            Improvement Exam 2026 resources, including available question
+            papers and answer key materials.
+
+            All available resources are organised into separate sections
+            to make exam preparation easier. Visit the respective sections
+            below to access the study materials and examination updates.
+            Exam Focus Plus aims to provide organised and accessible
+            educational resources for Kerala Higher Secondary students.
           </p>
-        </div>
+        </section>
 
-        <h2 className="mb-6 text-2xl font-bold text-gray-900">
-          Plus One Exam Resources
-        </h2>
+        <section className="mb-8">
+          <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+            <div className="grid sm:grid-cols-[200px_1fr]">
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {sections.map((section) => (
-            <div
-              key={section.title}
-              className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
-            >
-              <div className="mb-4 text-4xl">
-                {section.icon}
+              <div className="flex min-h-44 items-center justify-center bg-gradient-to-br from-green-950 via-green-800 to-emerald-600 p-6 text-center text-white">
+                <div>
+                  <div className="text-5xl">🎄</div>
+                  <p className="mt-3 text-lg font-extrabold">
+                    PLUS ONE
+                  </p>
+                  <p className="text-sm font-semibold">
+                    CHRISTMAS EXAM 2026
+                  </p>
+                  <p className="mt-2 text-xs text-green-100">
+                    Exam Focus Plus
+                  </p>
+                </div>
               </div>
 
-              <h3 className="text-xl font-bold text-gray-900">
-                {section.title}
-              </h3>
+              <div className="p-5 sm:p-6">
+                <h2 className="text-xl font-bold text-gray-900">
+                  Plus One Christmas Exam 2026
+                </h2>
 
-              <p className="mt-3 leading-7 text-gray-600">
-                {section.description}
-              </p>
+                <p className="mt-2 text-sm leading-6 text-gray-600">
+                  Access Plus One Christmas Exam question papers,
+                  examination timetable, subject-wise portions
+                  and weightage in one place. Useful study resources
+                  for Kerala Higher Secondary students.
+                </p>
 
-              <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-700">
-                <span>●</span>
-                Coming Soon
+                <div className="mt-5 flex flex-wrap gap-2">
+                  <a
+                    href="/plus-one-christmas-timetable-2026"
+                    className="rounded-lg bg-blue-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-800"
+                  >
+                    📅 Time Table
+                  </a>
+
+                  <a
+                    href="/plus-one-portions-26"
+                    className="rounded-lg bg-blue-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-800"
+                  >
+                    📚 Portions & Weightage
+                  </a>
+
+                  <a
+                    href="/plus-one-previous-year-questions-26"
+                    className="rounded-lg bg-blue-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-800"
+                  >
+                    📝 Previous Year Papers
+                  </a>
+                </div>
               </div>
+
             </div>
-          ))}
+          </div>
+        </section>
 
-          <Link
-            href="/plus-one-improvement-26"
-            className="rounded-2xl border border-blue-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
-          >
-            <div className="mb-4 text-4xl">🎓</div>
+        <section className="mb-8 rounded-2xl border border-blue-200 bg-white p-5 shadow-sm sm:p-6">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <h2 className="text-lg font-bold text-gray-900">
+                Plus One Improvement Exam 2026
+              </h2>
 
-            <h3 className="text-xl font-bold text-gray-900">
-              Plus One Improvement Exam 2026
-            </h3>
+              <p className="mt-2 text-sm leading-6 text-gray-600">
+                Access Plus One Improvement Exam question papers
+                and available answer key resources. Find subject-wise
+                examination materials and PDF resources for practice.
+              </p>
+            </div>
 
-            <p className="mt-3 leading-7 text-gray-600">
-              Access Plus One Improvement Exam question papers
-              and available answer key resources. Visit the
-              dedicated page to find subject-wise examination
-              materials and PDF resources for practice.
-            </p>
-
-            <p className="mt-5 font-semibold text-blue-600">
+            <a
+              href="/plus-one-improvement-26"
+              className="rounded-lg bg-blue-700 px-5 py-3 text-sm font-semibold text-white hover:bg-blue-800"
+            >
               View Resources →
-            </p>
-          </Link>
-        </div>
+            </a>
+          </div>
+        </section>
+
+        <section className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm sm:p-6">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <h2 className="text-lg font-bold text-gray-900">
+                Exam Focus Plus YouTube Channel
+              </h2>
+
+              <p className="mt-2 text-sm leading-6 text-gray-600">
+                Watch educational videos, exam updates and useful study
+                materials on our YouTube channel.
+              </p>
+            </div>
+
+            <a
+              href="https://www.youtube.com/@examfocusplus-hg7hb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg bg-red-600 px-5 py-3 text-sm font-semibold text-white hover:bg-red-700"
+            >
+              ▶️ Visit YouTube Channel
+            </a>
+          </div>
+        </section>
+
       </div>
     </main>
   );
