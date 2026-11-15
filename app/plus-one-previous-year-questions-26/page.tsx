@@ -15,7 +15,7 @@ export const metadata = {
     "Plus One Question Papers PDF",
     "Plus One Physics Question Paper",
     "Plus One Maths Question Paper",
-    "Plus one Christmas Exam Question Paper 2026"
+    "Plus one Christmas Exam Question Paper 2026",
     "Plus One Biology Question Paper",
   ],
 };
