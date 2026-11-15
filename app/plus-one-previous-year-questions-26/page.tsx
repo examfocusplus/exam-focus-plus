@@ -1,6 +1,6 @@
 const subjects = [
   { name: "English", file: "english_+1.pdf" },
-  { name: "Physics", file: "Physics_+1.pdf" },
+  { name: "Physics", file: "physics_+1.pdf" },
   { name: "Chemistry", file: "chemistry_+1.pdf" },
   { name: "Mathematics", file: "maths_+1.pdf" },
   { name: "Biology", file: "biology_+1.pdf" },
