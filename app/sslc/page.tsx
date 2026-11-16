@@ -98,7 +98,7 @@ export default function SSLCPage() {
                 key={item.title}
                 className="flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md"
               >
-                <div className={mb-5 flex h-14 w-14 items-center justify-center rounded-2xl ${item.color}}>
+                <div className={"mb-5 flex h-14 w-14 items-center justify-center rounded-2xl " + item.color}>
                   <span className="text-3xl">{item.icon}</span>
                 </div>
 
