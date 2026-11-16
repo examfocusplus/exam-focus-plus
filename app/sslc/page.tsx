@@ -1,102 +1,152 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "SSLC Christmas Exam 2026 | Time Table, Portions & Question Papers",
+  title:
+    "SSLC Christmas Exam 2026 – Time Table, Portions & Question Papers | Exam Focus Plus",
   description:
-    "Find SSLC Christmas Exam 2026 updates, timetable, exam portions and previous year question papers for Kerala students at Exam Focus Plus.",
+    "Get Kerala SSLC Christmas Exam 2026 timetable updates, Class 10 exam portions PDFs and previous year question papers at Exam Focus Plus.",
   alternates: {
     canonical: "/sslc",
   },
 };
 
-const sections = [
+const resources = [
   {
     title: "Christmas Exam Time Table",
     description:
-      "The Kerala SSLC Christmas examination timetable will be published here after its official release. Students can revisit this page to find subject-wise examination dates and schedules. The timetable will help Class 10 students organise their study time, plan revision and prepare for each subject. Please check this section again for the latest official examination updates.",
+      "Check the latest SSLC Christmas examination timetable updates. The subject-wise schedule will be added after it becomes available.",
     icon: "📅",
+    color: "bg-blue-50",
+    iconColor: "text-blue-600",
+    href: "/sslc-christmas-timetable-2026",
+    button: "View Time Table",
+    status: "Updates Soon",
   },
   {
     title: "Christmas Exam Portions",
     description:
-      "The SSLC Christmas examination portions will be updated here when the official details become available. Students will be able to check the subjects, lessons and topics included in the examination. This section will help Class 10 students identify the chapters to revise and organise their preparation effectively. Please revisit this page for updates.",
+      "Find SSLC Class 10 subject-wise Christmas exam portions PDFs. Access the available study materials and prepare for your examinations.",
     icon: "📚",
+    color: "bg-green-50",
+    iconColor: "text-green-600",
+    href: "/sslc-portions-26",
+    button: "View Portions",
+    status: "PDF Resources",
   },
   {
     title: "Previous Year Question Papers",
     description:
-      "Kerala SSLC previous year Christmas examination question papers will be added here when available. Students can use these papers to practise different types of questions and understand examination patterns. Regular practice can help improve time management, accuracy and confidence. Visit this section again for question papers and additional examination preparation resources.",
+      "Practise with SSLC previous year question papers to understand question patterns and improve your examination preparation.",
     icon: "📝",
+    color: "bg-purple-50",
+    iconColor: "text-purple-600",
+    href: "/sslc-previous-year-questions-26",
+    button: "View Question Papers",
+    status: "Coming Soon",
   },
 ];
 
 export default function SSLCPage() {
   return (
-    <main className="min-h-screen bg-gray-50 px-4 py-10 sm:px-6 lg:px-8">
+    <main className="min-h-screen bg-gray-50 px-4 py-8 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
 
-        <div className="mb-10 text-center">
-          <p className="mb-3 font-semibold text-blue-600">
-            EXAM FOCUS PLUS
-          </p>
+        <section className="relative mb-10 overflow-hidden rounded-3xl bg-gradient-to-br from-green-800 via-green-700 to-emerald-900 px-5 py-12 text-center text-white shadow-lg sm:px-10 sm:py-16">
+          <div className="absolute -right-10 -top-12 text-8xl opacity-10 sm:text-9xl">
+            🎄
+          </div>
 
-          <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-            SSLC Christmas Exam 2026
-          </h1>
+          <div className="relative">
+            <p className="mb-3 text-sm font-bold tracking-[0.2em] text-green-200">
+              EXAM FOCUS PLUS
+            </p>
 
-          <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-gray-600">
-            Welcome to the Kerala SSLC Christmas Exam section of Exam
-            Focus Plus. This page is designed to help Class 10 students
-            and parents find useful information related to the SSLC
-            Christmas examination. Students can find dedicated sections
-            for the Christmas Exam Time Table, Christmas Exam Portions
-            and Previous Year Question Papers. The timetable section
-            will provide subject-wise examination dates after the
-            official schedule is announced. The portions section will
-            help students identify the lessons and topics they need to
-            prepare for the examination. The previous year question
-            paper section will offer practice materials to help students
-            understand question patterns and improve their preparation.
-            Parents and teachers can also use these resources to guide
-            students during revision. Our aim is to make examination
-            information simple, organised and accessible on mobile
-            phones, tablets and computers. We will update this page
-            whenever official examination details and relevant study
-            materials become available. Students are encouraged to
-            revisit this page regularly for the latest SSLC Christmas
-            examination updates.
-          </p>
-        </div>
-
-        <h2 className="mb-6 text-2xl font-bold text-gray-900">
-          SSLC Christmas Exam Resources
-        </h2>
-
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {sections.map((section) => (
-            <div
-              key={section.title}
-              className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
-            >
-              <div className="mb-4 text-4xl">
-                {section.icon}
-              </div>
-
-              <h3 className="text-xl font-bold text-gray-900">
-                {section.title}
-              </h3>
-
-              <p className="mt-3 leading-7 text-gray-600">
-                {section.description}
-              </p>
-
-              <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-700">
-                <span>●</span>
-                Coming Soon
-              </div>
+            <div className="mb-4 text-5xl sm:text-6xl">
+              🎄
             </div>
-          ))}
-        </div>
+
+            <h1 className="text-3xl font-extrabold sm:text-5xl">
+              SSLC Christmas Exam 2026
+            </h1>
+
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-green-100 sm:text-base">
+              Your study companion for Kerala SSLC Christmas
+              Examination 2026. Find exam portions, timetable
+              updates and question papers in one place.
+            </p>
+
+            <div className="mt-7 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-5 py-2 text-sm font-semibold text-white backdrop-blur-sm">
+              Class 10 Study Resources
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-10">
+          <div className="mb-6 text-center">
+            <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
+              SSLC Christmas Exam Resources
+            </h2>
+            <p className="mt-2 text-sm text-gray-600 sm:text-base">
+              Access useful study materials for your examination preparation.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {resources.map((item) => (
+              <div
+                key={item.title}
+                className="flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md"
+              >
+                <div className={mb-5 flex h-14 w-14 items-center justify-center rounded-2xl ${item.color}}>
+                  <span className="text-3xl">{item.icon}</span>
+                </div>
+
+                <h3 className="text-xl font-bold text-gray-900">
+                  {item.title}
+                </h3>
+
+                <p className="mt-3 flex-1 text-sm leading-7 text-gray-600">
+                  {item.description}
+                </p>
+
+                <div className="mt-5">
+                  <span className="mb-4 inline-flex rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-600">
+                    {item.status}
+                  </span>
+
+                  <Link
+                    href={item.href}
+                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-green-700 px-4 py-3 text-sm font-bold text-white transition hover:bg-green-800"
+                  >
+                    {item.button}
+                    <span aria-hidden="true">→</span>
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="rounded-2xl border border-green-100 bg-white p-6 text-center shadow-sm sm:p-8">
+          <div className="mb-3 text-3xl">📖</div>
+          <h2 className="text-xl font-bold text-gray-900">
+            Prepare Better with Exam Focus Plus
+          </h2>
+          <p className="mx-auto mt-3 max-w-2xl text-sm leading-7 text-gray-600">
+            Explore subject-wise study materials and examination
+            resources for Kerala students. We will update this page
+            as more SSLC Christmas examination resources become available.
+          </p>
+          <a
+            href="https://www.youtube.com/@examfocusplus-hg7hb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-flex items-center justify-center gap-2 rounded-xl bg-red-600 px-6 py-3 text-sm font-bold text-white transition hover:bg-red-700"
+          >
+            ▶️ Visit Our YouTube Channel
+          </a>
+        </section>
 
       </div>
     </main>
