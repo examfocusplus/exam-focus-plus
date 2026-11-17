@@ -5,9 +5,32 @@ export const metadata: Metadata = {
   title:
     "SSLC Christmas Exam 2026 – Time Table, Portions & Question Papers | Exam Focus Plus",
   description:
-    "Get Kerala SSLC Christmas Exam 2026 timetable updates, Class 10 exam portions PDFs and previous year question papers at Exam Focus Plus.",
+    "Kerala SSLC Christmas Exam 2026 is expected to start on 8 December and continue until 17 December 2026. Get timetable updates, SSLC exam portions PDFs and previous year question papers at Exam Focus Plus.",
+  keywords: [
+    "SSLC Christmas Exam 2026",
+    "SSLC Christmas Exam Time Table 2026",
+    "Kerala SSLC Time Table 2026",
+    "SSLC Exam Dates 2026",
+    "Class 10 Christmas Exam 2026",
+    "SSLC Christmas Exam Portions 2026",
+    "Kerala SSLC Portions PDF",
+    "SSLC Previous Year Question Papers",
+    "SSLC Question Papers PDF",
+    "Kerala Class 10 Study Materials",
+    "SSLC Exam Preparation 2026",
+    "Exam Focus Plus",
+  ],
   alternates: {
     canonical: "/sslc",
+  },
+  openGraph: {
+    title:
+      "SSLC Christmas Exam 2026 – Time Table, Portions & Question Papers",
+    description:
+      "Kerala SSLC Christmas Exam 2026 is expected from 8 December to 17 December 2026. Explore SSLC portions, timetable updates and study resources.",
+    url: "https://examfocusplus.in/sslc",
+    siteName: "Exam Focus Plus",
+    type: "website",
   },
 };
 
@@ -15,11 +38,11 @@ const resources = [
   {
     title: "Christmas Exam Time Table",
     description:
-      "Check the latest SSLC Christmas examination timetable updates. The subject-wise schedule will be added after it becomes available.",
+      "Kerala SSLC Christmas Exam 2026 is expected to start on 8 December and continue until 17 December 2026. The official subject-wise timetable has not been released yet. It will be updated here once officially announced.",
     icon: "📅",
     color: "bg-blue-50",
     iconColor: "text-blue-600",
-    href: "/sslc-christmas-timetable-2026",
+    href: "/sslc-christmas-timetable-26",
     button: "View Time Table",
     status: "Updates Soon",
   },
@@ -87,6 +110,7 @@ export default function SSLCPage() {
             <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
               SSLC Christmas Exam Resources
             </h2>
+
             <p className="mt-2 text-sm text-gray-600 sm:text-base">
               Access useful study materials for your examination preparation.
             </p>
@@ -98,7 +122,12 @@ export default function SSLCPage() {
                 key={item.title}
                 className="flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md"
               >
-                <div className={"mb-5 flex h-14 w-14 items-center justify-center rounded-2xl " + item.color}>
+                <div
+                  className={
+                    "mb-5 flex h-14 w-14 items-center justify-center rounded-2xl " +
+                    item.color
+                  }
+                >
                   <span className="text-3xl">{item.icon}</span>
                 </div>
 
@@ -130,14 +159,17 @@ export default function SSLCPage() {
 
         <section className="rounded-2xl border border-green-100 bg-white p-6 text-center shadow-sm sm:p-8">
           <div className="mb-3 text-3xl">📖</div>
+
           <h2 className="text-xl font-bold text-gray-900">
             Prepare Better with Exam Focus Plus
           </h2>
+
           <p className="mx-auto mt-3 max-w-2xl text-sm leading-7 text-gray-600">
             Explore subject-wise study materials and examination
             resources for Kerala students. We will update this page
             as more SSLC Christmas examination resources become available.
           </p>
+
           <a
             href="https://www.youtube.com/@examfocusplus-hg7hb"
             target="_blank"
