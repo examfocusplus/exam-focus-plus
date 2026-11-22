@@ -1,4 +1,51 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Exam Focus Plus | Kerala School Study Materials",
+  description:
+    "Exam Focus Plus is an educational website created to support Kerala syllabus students with useful study materials and examination resources. Students from SSLC, Plus One, Plus Two, and Classes 5 to 9 can explore a wide range of learning resources through our website. We provide Christmas exam timetables, syllabus portions, previous year question papers, model question papers, answer keys, notes, and the latest educational updates. Our resources are organised by class and subject to help students find the materials they need easily. Students can use these resources to understand their syllabus, practise questions, prepare for examinations, and revise important topics. We aim to make educational materials accessible and help students plan their exam preparation more effectively. Exam Focus Plus also shares educational videos, revision sessions, and exam preparation content through its YouTube channel. Explore our website to find relevant Kerala school study resources and examination updates in one convenient place.",
+  keywords: [
+    "Exam Focus Plus",
+    "Kerala syllabus study materials",
+    "SSLC study materials Kerala",
+    "SSLC Christmas exam timetable 2026",
+    "class 5 Christmas exam timetable 2026",
+    "class 6 Christmas exam timetable 2026",
+    "class 7 Christmas exam timetable 2026",
+    "class 8 Christmas exam timetable 2026",
+    "class 9 Christmas exam timetable 2026",
+    "SSLC Christmas exam question paper 2025",
+    "SSLC Christmas exam question paper 2026",
+    "Plus One Christmas exam question paper 2026",
+    "Plus Two Christmas exam question paper 2026",
+    "Plus One Christmas exam question paper 2025",
+    "Plus Two Christmas exam question paper 2025",
+    "class 5 christmas exam question paper 2025",
+    "class 6 christmas exam question paper 2025",
+    "class 7 christmas exam question paper 2025",
+    "class 8 christmas exam question paper 2025",
+    "class 9 christmas exam question paper 2025",
+    "class 5 christmas exam question paper 2026",
+    "Class 5 to 9 Christmas exam timetable 2026",
+    "Kerala Christmas exam portions",
+    "Previous year question papers Kerala",
+    "Kerala model question papers",
+    "Kerala exam answer keys",
+    "Kerala school exam updates",
+  ],
+  alternates: {
+    canonical: "https://examfocusplus.in/",
+  },
+  openGraph: {
+    title: "Exam Focus Plus | Kerala School Study Materials",
+    description:
+      "Find Kerala syllabus study materials, examination timetables, syllabus portions, question papers, answer keys and educational updates for SSLC, Plus One, Plus Two and Classes 5 to 9.",
+    url: "https://examfocusplus.in/",
+    siteName: "Exam Focus Plus",
+    type: "website",
+  },
+};
 
 const categories = [
   {
