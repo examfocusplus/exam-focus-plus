@@ -1,32 +1,58 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Class 7 Christmas Exam 2026 | Time Table, Portions & Question Papers",
+  title: "Class 7 Christmas Exam 2026 | Time Table, Portions & Question Papers - Exam Focus Plus",
   description:
-    "Find Class 7 Christmas Exam 2026 updates, timetable, exam portions and previous year question papers for Kerala students at Exam Focus Plus.",
+    "Get Kerala Class 7 Christmas Exam 2026 timetable, subject-wise portions and 2025 previous year question papers. Access useful exam preparation resources for Class 7 students at Exam Focus Plus.",
+  keywords: [
+    "Class 7 Christmas Exam 2026",
+    "Class 7 Christmas Exam Time Table 2026",
+    "Class 7 Christmas Exam Portions 2026",
+    "Class 7 Christmas Exam Question Papers 2025",
+    "Class 7 Previous Year Question Papers",
+    "Kerala Class 7 Study Materials",
+    "Kerala Class 7 Christmas Exam",
+    "Class 7 Exam Preparation",
+    "Class 7 PDF Study Materials",
+    "Exam Focus Plus"
+  ],
   alternates: {
     canonical: "/class-7",
+  },
+  openGraph: {
+    title: "Class 7 Christmas Exam 2026 | Exam Focus Plus",
+    description:
+      "Find Class 7 Christmas exam timetable, portions and previous year question papers for Kerala students.",
+    url: "https://examfocusplus.in/class-7",
+    siteName: "Exam Focus Plus",
+    type: "website",
   },
 };
 
 const sections = [
   {
-    title: "Christmas Exam Time Table",
+    title: "Christmas Exam Time Table 2026",
     description:
-      "The Class 7 Christmas examination timetable will be published here after its official release. Students can revisit this page to find subject-wise examination dates and schedules. The timetable will help students organise their study time, plan revision and prepare for each subject. Please check this section again for the latest official examination updates.",
+      "Check the Class 7 Christmas examination timetable with subject-wise dates and session details. Use the schedule to plan your revision and prepare for each subject.",
     icon: "📅",
+    href: "/class-7-christmas-timetable-26",
+    button: "View Time Table",
   },
   {
-    title: "Christmas Exam Portions",
+    title: "Christmas Exam Portions 2026",
     description:
-      "The Class 7 Christmas examination portions will be updated here when the official details become available. Students will be able to check the subjects, lessons and topics included in the examination. This section will help students understand which chapters to revise and organise their preparation effectively. Please revisit this page for updates.",
+      "Find information about Class 7 Christmas examination portions and subject-wise lessons. Use the available syllabus information to organise your revision and exam preparation.",
     icon: "📚",
+    href: "/class-7-portions-26",
+    button: "View Portions",
   },
   {
-    title: "Previous Year Question Papers",
+    title: "Christmas Exam Question Papers 2025",
     description:
-      "Class 7 previous year Christmas examination question papers will be added here when available. Students can use these papers to practise different types of questions and understand examination patterns. Regular practice can help improve time management, accuracy and confidence. Visit this section again for question papers and additional examination preparation resources.",
+      "Practise with Class 7 previous year Christmas examination question papers. English Medium and available Malayalam Medium PDF papers are provided for subject-wise practice.",
     icon: "📝",
+    href: "/class-7-previous-year-questions-26",
+    button: "View Question Papers",
   },
 ];
 
@@ -45,26 +71,23 @@ export default function Class7Page() {
           </h1>
 
           <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-gray-600">
-            Welcome to the Class 7 Christmas Exam section of Exam Focus
-            Plus. This page is created to help Kerala Class 7 students
-            and parents find useful information related to the Christmas
-            examination. Students can find dedicated sections for the
-            Christmas Exam Time Table, Christmas Exam Portions and
-            Previous Year Question Papers. The timetable section will
-            provide subject-wise examination dates after the official
-            schedule is announced. The portions section will help
-            students identify the lessons and topics they need to
-            prepare for the examination. The previous year question
-            paper section will offer practice materials to help students
-            understand question patterns and improve their preparation.
-            Parents and teachers can also use these resources to guide
-            students during revision. Our aim is to make examination
-            information simple, organised and accessible on mobile
-            phones, tablets and computers. We will update this page
-            whenever official examination details and relevant study
-            materials become available. Students are encouraged to
-            revisit this page regularly for the latest Class 7
-            Christmas examination updates.
+            Welcome to the Class 7 Christmas Exam section of Exam
+            Focus Plus. This page helps Kerala Class 7 students
+            and parents access useful examination resources in
+            one place. Students can find the Christmas Exam Time
+            Table 2026, subject-wise Christmas Exam Portions and
+            Previous Year Question Papers 2025. The timetable
+            provides subject-wise examination dates and session
+            details to help students plan their revision. The
+            portions section provides information to help
+            students identify lessons and organise their
+            preparation. Students can also practise using
+            previous year question papers to understand question
+            patterns and improve their exam preparation. These
+            resources are organised for easy access on mobile
+            phones, tablets and computers. Exam Focus Plus aims
+            to make Kerala school examination resources simple
+            and accessible for students, parents and teachers.
           </p>
         </div>
 
@@ -76,7 +99,7 @@ export default function Class7Page() {
           {sections.map((section) => (
             <div
               key={section.title}
-              className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
+              className="flex flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
             >
               <div className="mb-4 text-4xl">
                 {section.icon}
@@ -86,14 +109,17 @@ export default function Class7Page() {
                 {section.title}
               </h3>
 
-              <p className="mt-3 leading-7 text-gray-600">
+              <p className="mt-3 flex-grow leading-7 text-gray-600">
                 {section.description}
               </p>
 
-              <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-700">
-                <span>●</span>
-                Coming Soon
-              </div>
+              <a
+                href={section.href}
+                className="mt-5 inline-flex items-center justify-center rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
+              >
+                {section.button}
+                <span className="ml-2">→</span>
+              </a>
             </div>
           ))}
         </div>
