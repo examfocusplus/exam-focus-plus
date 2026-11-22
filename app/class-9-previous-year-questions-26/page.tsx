@@ -37,7 +37,7 @@ const malayalamMedium = [
   { name: "Biology", file: "biology-mm_9.pdf", icon: "🧬" },
   { name: "Chemistry", file: "chemistry-mm_9.pdf", icon: "🧪" },
   { name: "Physics", file: "physics-mm_9.pdf", icon: "⚛️" },
-  { name: "Social Science", file: "social-mm_8.pdf", icon: "🌍" },
+  { name: "Social Science", file: "social-mm_9.pdf", icon: "🌍" },
   { name: "Mathematics", file: "maths-mm_9.pdf", icon: "📐" }
 ];
 
