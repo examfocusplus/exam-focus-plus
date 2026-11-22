@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Exam Focus Plus | Kerala School Study Materials",
   description:
-    "Exam Focus Plus is an educational website created to support Kerala syllabus students with useful study materials and examination resources. Students from SSLC, Plus One, Plus Two, and Classes 5 to 9 can explore a wide range of learning resources through our website. We provide Christmas exam timetables, syllabus portions, previous year question papers, model question papers, answer keys, notes, and the latest educational updates. Our resources are organised by class and subject to help students find the materials they need easily. Students can use these resources to understand their syllabus, practise questions, prepare for examinations, and revise important topics. We aim to make educational materials accessible and help students plan their exam preparation more effectively. Exam Focus Plus also shares educational videos, revision sessions, and exam preparation content through its YouTube channel. Explore our website to find relevant Kerala school study resources and examination updates in one convenient place.",
+    "Exam Focus Plus is an educational platform for Kerala syllabus students. Find SSLC, Plus One, Plus Two and Class 5 to 9 study materials, examination timetables, syllabus portions, previous year question papers, model question papers, answer keys, notes and educational updates. Our class-wise and subject-wise resources help students find useful materials for exam preparation, practice and revision. Explore Kerala school examination resources and learning content in one convenient place.",
   keywords: [
     "Exam Focus Plus",
     "Kerala syllabus study materials",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Exam Focus Plus | Kerala School Study Materials",
     description:
-      "Find Kerala syllabus study materials, examination timetables, syllabus portions, question papers, answer keys and educational updates for SSLC, Plus One, Plus Two and Classes 5 to 9.",
+      "Explore Kerala syllabus study materials, exam timetables, portions, question papers, answer keys and educational updates for SSLC, Plus One, Plus Two and Classes 5 to 9.",
     url: "https://examfocusplus.in/",
     siteName: "Exam Focus Plus",
     type: "website",
@@ -146,8 +146,8 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="px-4 pb-8 pt-10 sm:pb-12 sm:pt-16">
-        <div className="mx-auto max-w-6xl overflow-hidden rounded-3xl bg-gradient-to-r from-blue-950 via-blue-800 to-indigo-700 px-5 py-10 text-white shadow-lg sm:px-10 sm:py-14">
+      <section className="px-4 pb-7 pt-8 sm:pb-10 sm:pt-12">
+        <div className="mx-auto max-w-6xl overflow-hidden rounded-3xl bg-gradient-to-r from-blue-950 via-blue-800 to-indigo-700 px-5 py-8 text-white shadow-lg sm:px-10 sm:py-12">
           <p className="mb-3 inline-block rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold tracking-wide">
             YOUR LEARNING PARTNER
           </p>
@@ -167,10 +167,38 @@ export default function Home() {
 
           <Link
             href="/latest-updates"
-            className="mt-7 inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-bold text-blue-900 transition hover:bg-blue-50"
+            className="mt-6 inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-bold text-blue-900 transition hover:bg-blue-50"
           >
             Explore Latest Updates <span>→</span>
           </Link>
+        </div>
+      </section>
+
+      {/* About Exam Focus Plus - Visible SEO Description */}
+      <section className="mx-auto max-w-6xl px-4 pb-7">
+        <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
+          <h2 className="mb-3 text-lg font-extrabold text-slate-900">
+            About Exam Focus Plus
+          </h2>
+
+          <p className="text-sm leading-6 text-slate-600">
+            Exam Focus Plus is an educational platform created to support
+            Kerala syllabus students in their learning and examination
+            preparation. Students from SSLC, Plus One, Plus Two and Classes
+            5 to 9 can explore useful study materials and educational
+            resources through our website. We provide Christmas exam
+            timetables, syllabus portions, previous year question papers,
+            model question papers, answer keys, notes and the latest exam
+            updates. Our resources are organised class-wise to help students
+            find relevant materials easily. Students can use these resources
+            to understand their syllabus, practise questions, revise important
+            topics and plan their study schedules. We aim to make educational
+            content accessible and support students throughout their exam
+            preparation. Along with website resources, Exam Focus Plus also
+            shares educational videos, revision sessions and exam preparation
+            content through its YouTube channel. Explore our website to find
+            useful learning materials and examination updates in one place.
+          </p>
         </div>
       </section>
 
