@@ -3,30 +3,48 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Class 9 Christmas Exam 2026 | Time Table, Portions & Question Papers",
   description:
-    "Find Class 9 Christmas Exam 2026 updates, timetable, exam portions and previous year question papers for Kerala students at Exam Focus Plus.",
+    "Find Class 9 Christmas Exam 2026 timetable, subject-wise portions and previous year question papers for Kerala students. View and download study materials at Exam Focus Plus.",
+  keywords: [
+    "Class 9 Christmas Exam 2026",
+    "Class 9 Christmas Exam Question Paper 2026",
+    "Class 9 Christmas Exam Question Paper 2025",
+    "Class 9 Christmas Exam Time Table",
+    "Class 9 Christmas Exam Portions",
+    "Class 9 Question Papers 2025",
+    "Kerala Class 9 Study Materials",
+    "9th Standard Christmas Exam",
+    "Class 9 Previous Year Question Papers",
+    "Exam Focus Plus",
+  ],
   alternates: {
-    canonical: "/class-9",
+    canonical: "https://examfocusplus.in/class-9",
   },
 };
 
 const sections = [
   {
-    title: "Christmas Exam Time Table",
+    title: "Christmas Exam Time Table 2026",
     description:
-      "The Class 9 Christmas examination timetable will be published here after its official release. Students can revisit this page to find subject-wise examination dates and schedules. The timetable will help students organise their study time, plan revision and prepare for each subject. Please check this section again for the latest official examination updates.",
+      "Check the Class 9 Christmas examination timetable for 2026 with subject-wise exam dates and FN/AN sessions. View the timetable and plan your examination preparation.",
     icon: "📅",
+    link: "/class-9-christmas-timetable-26",
+    button: "View Time Table",
   },
   {
-    title: "Christmas Exam Portions",
+    title: "Christmas Exam Portions 2026",
     description:
-      "The Class 9 Christmas examination portions will be updated here when the official details become available. Students will be able to check the subjects, lessons and topics included in the examination. This section will help students understand which chapters to revise and organise their preparation effectively. Please revisit this page for updates.",
+      "Access subject-wise Class 9 Christmas exam portions PDF. Study materials are available for Malayalam, Hindi, English, Mathematics, Biology, Chemistry, Physics, Geography and History.",
     icon: "📚",
+    link: "/class-9-portions-26",
+    button: "View Portions",
   },
   {
-    title: "Previous Year Question Papers",
+    title: "Christmas Exam Question Papers 2025",
     description:
-      "Class 9 previous year Christmas examination question papers will be added here when available. Students can use these papers to practise different types of questions and understand examination patterns. Regular practice can help improve time management, accuracy and confidence. Visit this section again for question papers and additional examination preparation resources.",
+      "Practise with Class 9 previous Christmas examination question papers. Access subject-wise question papers in English Medium and Malayalam Medium to improve your exam preparation.",
     icon: "📝",
+    link: "/class-9-previous-year-questions-26",
+    button: "View Question Papers",
   },
 ];
 
@@ -46,25 +64,16 @@ export default function Class9Page() {
 
           <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-gray-600">
             Welcome to the Class 9 Christmas Exam section of Exam Focus
-            Plus. This page is created to help Kerala Class 9 students
-            and parents find useful information related to the Christmas
-            examination. Students can find dedicated sections for the
-            Christmas Exam Time Table, Christmas Exam Portions and
-            Previous Year Question Papers. The timetable section will
-            provide subject-wise examination dates after the official
-            schedule is announced. The portions section will help
-            students identify the lessons and topics they need to
-            prepare for the examination. The previous year question
-            paper section will offer practice materials to help students
-            understand question patterns and improve their preparation.
-            Parents and teachers can also use these resources to guide
-            students during revision. Our aim is to make examination
-            information simple, organised and accessible on mobile
-            phones, tablets and computers. We will update this page
-            whenever official examination details and relevant study
-            materials become available. Students are encouraged to
-            revisit this page regularly for the latest Class 9
-            Christmas examination updates.
+            Plus. This page helps Kerala Class 9 students and parents
+            access useful examination information and study materials
+            in one place. Find the Christmas Exam Time Table 2026,
+            subject-wise examination portions and previous year
+            Christmas question papers. Students can check examination
+            dates, identify the topics to study and practise previous
+            question papers for better preparation. The resources are
+            organised for easy access on mobile phones, tablets and
+            computers. Visit the individual sections to view or
+            download the available study materials.
           </p>
         </div>
 
@@ -76,7 +85,7 @@ export default function Class9Page() {
           {sections.map((section) => (
             <div
               key={section.title}
-              className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
+              className="flex flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
             >
               <div className="mb-4 text-4xl">
                 {section.icon}
@@ -86,14 +95,17 @@ export default function Class9Page() {
                 {section.title}
               </h3>
 
-              <p className="mt-3 leading-7 text-gray-600">
+              <p className="mt-3 flex-grow leading-7 text-gray-600">
                 {section.description}
               </p>
 
-              <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-700">
-                <span>●</span>
-                Coming Soon
-              </div>
+              <a
+                href={section.link}
+                className="mt-6 inline-flex items-center justify-center gap-2 rounded-lg bg-blue-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-800"
+              >
+                {section.button}
+                <span>→</span>
+              </a>
             </div>
           ))}
         </div>
