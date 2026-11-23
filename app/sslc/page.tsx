@@ -66,7 +66,7 @@ const resources = [
     iconColor: "text-purple-600",
     href: "/sslc-previous-year-questions-26",
     button: "View Question Papers",
-    status: "Coming Soon",
+    status: "PDF Resources",
   },
 ];
 
