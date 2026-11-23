@@ -6,7 +6,10 @@ export const metadata: Metadata = {
     "Download Class 9 Christmas Exam Question Paper 2025 PDFs. Get Malayalam, English, Hindi, Biology, Chemistry, Physics and Social Science question papers in English and Malayalam medium.",
   keywords: [
     "Class 9 Christmas Exam Question Paper 2025",
+    "class 9 christmas exam question paper 2025",
     "Class 9 Christmas Exam Question Paper 2026",
+    "class 9 christmas exam question paper 2026",
+    "class 9 christmas exam answer key 2026",
     "Class 9 Christmas Exam Answer key 2026",
     "Class 9 Christmas Question Papers Kerala",
     "Class 9 Previous Year Question Papers",
