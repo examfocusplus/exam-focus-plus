@@ -38,13 +38,13 @@ const resources = [
   {
     title: "Christmas Exam Time Table",
     description:
-      "Kerala SSLC Christmas Exam 2026 is expected to start on 8 December and continue until 17 December 2026. The official subject-wise timetable has not been released yet. It will be updated here once officially announced.",
+      "Check the Kerala SSLC Christmas Exam 2026 subject-wise timetable with examination dates and FN/AN sessions. View or download the complete timetable PDF.",
     icon: "📅",
     color: "bg-blue-50",
     iconColor: "text-blue-600",
     href: "/sslc-christmas-timetable-26",
     button: "View Time Table",
-    status: "Updates Soon",
+    status: "Time Table Available",
   },
   {
     title: "Christmas Exam Portions",
