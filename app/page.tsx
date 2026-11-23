@@ -223,7 +223,7 @@ export default function Home() {
               className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg"
             >
               <div
-                className={`flex h-2 w-full bg-gradient-to-r ${category.color}`}
+                className={flex h-2 w-full bg-gradient-to-r ${category.color}}
               />
 
               <div className="p-4 sm:p-6">
@@ -287,44 +287,6 @@ export default function Home() {
           </a>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="border-t border-slate-200 bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-8">
-          <div className="flex flex-col items-center justify-between gap-5 sm:flex-row">
-            <div className="text-center sm:text-left">
-              <h2 className="font-extrabold text-blue-900">
-                Exam Focus Plus
-              </h2>
-              <p className="mt-1 text-xs text-slate-500">
-                A learning platform for Kerala syllabus students.
-              </p>
-            </div>
-
-            <nav className="flex flex-wrap justify-center gap-x-5 gap-y-3 text-xs font-medium text-slate-600">
-              <Link className="hover:text-blue-700" href="/about">
-                About Us
-              </Link>
-
-              <Link className="hover:text-blue-700" href="/contact">
-                Contact Us
-              </Link>
-
-              <Link className="hover:text-blue-700" href="/privacy-policy">
-                Privacy Policy
-              </Link>
-
-              <Link className="hover:text-blue-700" href="/disclaimer">
-                Disclaimer
-              </Link>
-            </nav>
-          </div>
-
-          <div className="mt-6 border-t border-slate-100 pt-5 text-center text-xs text-slate-400">
-            © {new Date().getFullYear()} Exam Focus Plus. All rights reserved.
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }
